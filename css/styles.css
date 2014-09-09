@@ -1,0 +1,85 @@
+.name h1{
+  color: black;  
+}
+
+.top-bar{
+    background-color: white;
+    position:relative;  
+}
+.logo{
+    position: absolute;
+    z-index: 10;
+}
+/* Nav Bar Colors */
+.top-bar-section li:not(.has-form) a:not(.button) {
+   background-color: #FFE84A;
+   color: black;
+   border-top: 2px solid #e5d149;
+   border-bottom: 1px solid #e5d149;
+    
+     -moz-transition:background-color .2s ease-in;
+    -o-transition:background-color .2s ease-in;
+    -webkit-transition:background-color .2s ease-in;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #bead38;
+    color: black;
+}
+/* Nav Bar Mobile */
+.top-bar .toggle-topbar.menu-icon a {
+color: black;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
+}
+
+
+/* Image Hover */
+.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 40px;
+  position: relative;
+  bottom: 2.5rem;
+  width: 100%;
+  opacity: 0;
+    
+    -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+  
+.img-caption:hover ~ .text-content {
+  opacity: 1;
+}
+.text-content:hover {
+  opacity: 1;
+}
+.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Page Styles*/
+.highlight{
+    
+}
+.highlight img{
+    
+}
+
+/* Media Queries  */
+@media only screen and (min-width: 40.063em) {  
+
+.top-bar{
+    float:right;
+    }
+.logo{
+    position: relative;
+    z-index: 10;
+}
+}
