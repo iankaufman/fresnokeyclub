@@ -1,5 +1,10 @@
+h3{
+    font-size: 1.84em;
+    
+}
 .name h1{
   color: black;  
+    
 }
 
 .top-bar{
@@ -29,11 +34,23 @@
 .top-bar .toggle-topbar.menu-icon a {
 color: black;
 }
+.top-bar.expanded .title-area {
+background: none;
+}
 .top-bar .toggle-topbar.menu-icon a span::after {
 box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
 }
-
-
+.top-bar-section ul li {
+background: #BEAD38;
+    color: black;
+}
+.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
+    color: black;
+}
+.top-bar-section ul li:hover:not(.has-form) > a {
+    color: black; 
+    background-color: #CCBA3C;
+}
 /* Image Hover */
 .text-content {
   background: rgba(0,0,0,0.5);
@@ -44,6 +61,7 @@ box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
   position: relative;
   bottom: 2.5rem;
   width: 100%;
+    
   opacity: 0;
     
     -webkit-transition: opacity 500ms;
@@ -63,14 +81,50 @@ box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
   text-align: center;
   vertical-align: middle;
 }
+/* Custom Background Grids */
+.backgroundgrid{
+     background-repeat: no-repeat;
+        min-height:300px;
+}
+.backgroundgrid h3{
+    color: white;
+    float: right;
+    margin-top: 240px;
+    font-family: 'Oswald', sans-serif;
+    -webkit-text-stroke: 1px black;
+ 
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+#news{
+    background: url(../img/index/news.jpg) no-repeat center center; 
+    background-size: cover;
+}
+#whatis{
+    background: url(../img/index/whatiskeyclub.jpg) no-repeat center center; 
+    background-size: cover;
+               
+}
+#servproj{
+    background: url(../img/index/currentproject.jpg) no-repeat center center; 
+    background-size: cover;
+        
+}
+
 
 /* Page Styles*/
-.highlight{
-    
-}
-.highlight img{
-    
-}
+
+/* Outside Modules */
+.masonry-brick { width: 220px; margin: 10px; float: left;  }
+#masonryContainer { width: 0 auto; }              
+            
+
+
+
 
 /* Media Queries  */
 @media only screen and (min-width: 40.063em) {  
@@ -82,4 +136,21 @@ box-shadow: 0 0px 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
     position: relative;
     z-index: 10;
 }
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    color: black;
+    background: #FFE84A;
 }
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button):hover {
+    background: #BEAD38;
+    color: black;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button):hover + .has-dropdown {
+    background-color: yellow;
+}
+.top-bar-section ul li:hover:not(.has-form) > a {
+background-color: pink;
+background: #BEAD38;
+color: black;
+}
+}
+
