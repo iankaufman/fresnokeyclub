@@ -1,3 +1,11 @@
+html, *{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rosario', sans-serif;
+}
 h3{
     font-size: 1.84em;
     
@@ -85,6 +93,9 @@ background: #BEAD38;
 .backgroundgrid{
      background-repeat: no-repeat;
         min-height:300px;
+    margin: 1px;
+    
+    
 }
 .backgroundgrid h3{
     color: white;
@@ -103,6 +114,7 @@ background: #BEAD38;
 #news{
     background: url(../img/index/news.jpg) no-repeat center center; 
     background-size: cover;
+    
 }
 #whatis{
     background: url(../img/index/whatiskeyclub.jpg) no-repeat center center; 
