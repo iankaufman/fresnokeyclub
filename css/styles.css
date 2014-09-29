@@ -2,19 +2,24 @@ html, *{
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     font-family: 'Rosario', sans-serif;
 }
 h3{
-    font-size: 1.81em;
-    
+    font-size: 1.81em;   
+}
+h2{
+    font-family: 'Oswald', sans-serif;
 }
 .name h1{
   color: black;  
     
 }
-
+.subheading {
+    font-family: 'Lato', sans-serif;
+}
 .top-bar{
     background-color: white;
     position:relative;  
@@ -23,7 +28,10 @@ h3{
     position: absolute;
     z-index: 10;
 }
-/* Nav Bar Colors */
+.padded{
+    padding: 50px;
+}
+/* Nav Bar Styles */
 .top-bar-section li:not(.has-form) a:not(.button) {
    background-color: #FFE84A;
    color: black;
@@ -33,6 +41,11 @@ h3{
      -moz-transition:background-color .2s ease-in;
     -o-transition:background-color .2s ease-in;
     -webkit-transition:background-color .2s ease-in;
+}
+.top-bar-section ul li > a {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    
 }
 .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #bead38;
@@ -67,7 +80,7 @@ background: #BEAD38;
   display: table;
   height: 40px;
   position: relative;
-  bottom: 2.5rem;
+  bottom: 2.5em;
   width: 100%;
     
   opacity: 0;
@@ -103,7 +116,7 @@ background: #BEAD38;
     float: right;
     margin-top: 240px;
     font-family: 'Oswald', sans-serif;
-    -webkit-text-stroke: 1px black;
+    
  
    text-shadow:
        3px 3px 0 #000,
